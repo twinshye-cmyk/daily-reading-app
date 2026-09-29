@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Gowun Dodum', 'Outfit', 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6, button, badge {
+    word-break: keep-all;
+  }
+}
+
+.font-gaegu {
+  font-family: 'Gaegu', cursive;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Cool-tone minimal highlighters & Spider-Man web styling */
+.highlight-pen-sky {
+  background: linear-gradient(104deg, rgba(224, 242, 254, 0) 0.9%, rgba(186, 230, 253, 0.6) 2.4%, rgba(186, 230, 253, 0.4) 98%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.highlight-pen-red {
+  background: linear-gradient(104deg, rgba(254, 226, 226, 0) 0.9%, rgba(254, 202, 202, 0.75) 2.4%, rgba(254, 202, 202, 0.45) 98%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.highlight-pen-blue {
+  background: linear-gradient(104deg, rgba(219, 234, 254, 0) 0.9%, rgba(191, 219, 254, 0.65) 2.4%, rgba(191, 219, 254, 0.45) 98%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.highlight-pen-emerald {
+  background: linear-gradient(104deg, rgba(209, 250, 229, 0) 0.9%, rgba(167, 243, 208, 0.6) 2.4%, rgba(167, 243, 208, 0.4) 98%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* Spider-Man Web Theme Accents */
+.spider-web-pattern {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(rgba(220, 38, 38, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 40px;
+}
+
+.spider-gradient-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #1e1b4b 100%);
+}
+
+.spider-btn-red {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+.spider-btn-red:hover {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 50%, #dc2626 100%);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.35);
+}
+
+/* Clean cool paper card texture */
+.paper-card {
+  background-color: #ffffff;
+  background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+/* Subtle bounce */
+@keyframes soft-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-soft-bounce {
+  animation: soft-bounce 2s infinite ease-in-out;
+}
+
+@media print {
+  html, body {
+    background-color: white !important;
+    background-image: none !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 8mm 8mm 8mm 8mm;
+  }
+
+  /* Ensure background colors and borders are preserved */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    box-sizing: border-box;
+  }
+
+  /* Hide navigation, header, main body and non-printable elements */
+  header, nav, footer, main, .print-hidden, .no-print {
+    display: none !important;
+  }
+
+  .print-modal-container {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    overflow: visible !important;
+  }
+
+  .page-front {
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    max-height: 272mm !important;
+    overflow: hidden !important;
+  }
+
+  .page-back {
+    page-break-before: always !important;
+    break-before: page !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  .individual-report-page {
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .individual-report-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "하루 한 장 수능 영어 독해",
+  "description": "상식·교양과 수능 유형을 결합한 하루 한 장 영어 독해 학습 플랫폼. 단어장, 구문 분석, 해설, 학습 리포트 및 A4 인쇄 학습지 자동 생성 제공.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

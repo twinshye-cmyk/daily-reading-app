@@ -1,0 +1,37 @@
+{
+  "profiles": [
+    {
+      "id": "user-mom",
+      "name": "열공마미",
+      "grade": "",
+      "targetLevel": "전체 관리 및 학습 지도",
+      "avatarTheme": "spider-red",
+      "createdAt": "2026-08-15T09:27:37.898Z",
+      "isMomOrAdmin": true
+    },
+    {
+      "id": "user-1786783218194-niok",
+      "name": "김규린",
+      "grade": "고1",
+      "targetLevel": "수능 1등급 (90점 이상)",
+      "avatarTheme": "spider-blue",
+      "createdAt": "2026-08-15T08:40:18.194Z",
+      "isMomOrAdmin": false,
+      "momEncouragement": null
+    },
+    {
+      "id": "user-1786783207939-1sgq",
+      "name": "김지석",
+      "grade": "고3/수능",
+      "targetLevel": "수능 1등급 (90점 이상)",
+      "avatarTheme": "spider-red",
+      "createdAt": "2026-08-15T08:40:07.939Z",
+      "isMomOrAdmin": false,
+      "momEncouragement": null
+    }
+  ],
+  "studyRecords": [],
+  "savedWords": [],
+  "customPassages": [],
+  "updatedAt": "2026-08-15T09:28:14.391Z"
+}
